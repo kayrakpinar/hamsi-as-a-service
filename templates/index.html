@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bu sitenin amacını düşündükçe gülmeden edemiyorum</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    {% include 'header.html' %}
+    <div class="container-fluid" style="margin-top: 80px">
+      <div class="container text-center">
+        <h1>ultra mega süper harika muhteşem harikulade hamsi fotoğrafı</h1>
+        <img id="foto" src="{{ url_for('static', path=data.resim) }}">
+      </div>
+    </div>
+  </body>
+</html>
